@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu Nombre — Software Engineer</title>
+    <meta name="description" content="Portafolio profesional para mostrar experiencia y habilidades en desarrollo de software." />
+    <meta name="author" content="Tu Nombre" />
+    <meta property="og:title" content="Portafolio — Tu Nombre" />
+    <meta property="og:description" content="Experiencia, proyectos y contacto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tu-usuario.github.io/" />
+    <meta property="og:image" content="https://tu-usuario.github.io/assets/img/og-cover.png" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">
+          <i class="bi bi-braces-asterisk text-primary"></i> Tu Nombre
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            <li class="nav-item ms-lg-3">
+              <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-label="Cambiar tema">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero-section">
+      <div class="container d-flex flex-column flex-lg-row align-items-center gap-4">
+        <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+          <span class="badge rounded-pill text-bg-primary mb-3">Disponible para nuevos retos</span>
+          <h1 class="display-5 fw-bold mb-3">Hola, soy <span class="text-primary">Tu Nombre</span></h1>
+          <p class="lead text-secondary mb-4">
+            Ingeniero/a de software enfocado/a en crear productos de alto impacto con
+            código limpio, escalable y orientado a resultados.
+          </p>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+            <a href="#projects" class="btn btn-primary btn-lg"><i class="bi bi-rocket-takeoff me-2"></i>Ver proyectos</a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg"><i class="bi bi-envelope me-2"></i>Contáctame</a>
+          </div>
+          <div class="d-flex gap-3 mt-4 justify-content-center justify-content-lg-start">
+            <a class="text-body-secondary fs-4" href="https://github.com/tu-usuario" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="text-body-secondary fs-4" href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="text-body-secondary fs-4" href="mailto:tu.email@dominio.com" aria-label="Email"><i class="bi bi-envelope-at"></i></a>
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6 order-1 order-lg-2">
+          <!-- Avatar/Illustration SVG inline to avoid external files -->
+          <div class="ratio ratio-1x1 rounded-circle overflow-hidden shadow-sm border avatar-gradient">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar">
+              <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0d6efd" />
+                  <stop offset="100%" stop-color="#6f42c1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#g)"/>
+              <circle cx="100" cy="80" r="35" fill="#fff" opacity="0.9"/>
+              <rect x="45" y="130" width="110" height="50" rx="25" fill="#fff" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="h1 fw-bold mb-3">Acerca de mí</h2>
+            <p class="text-secondary mb-3">
+              Soy un/a desarrollador/a full‑stack con experiencia en diseño de sistemas,
+              desarrollo de APIs y interfaces modernas. Me apasiona construir productos
+              confiables con foco en rendimiento, accesibilidad y experiencia de usuario.
+            </p>
+            <ul class="list-unstyled small text-secondary">
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Arquitectura limpia y patrones de diseño</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>CI/CD, testing y calidad de código</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Comunicación clara y trabajo en equipo</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2"><i class="bi bi-speedometer2 text-primary me-2"></i><strong>Rendimiento</strong></div>
+                    <p class="small text-secondary mb-0">Optimización de carga, observabilidad y métricas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2"><i class="bi bi-shield-check text-primary me-2"></i><strong>Seguridad</strong></div>
+                    <p class="small text-secondary mb-0">Buenas prácticas OWASP y protección de datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2"><i class="bi bi-diagram-3 text-primary me-2"></i><strong>Escalabilidad</strong></div>
+                    <p class="small text-secondary mb-0">Microservicios, colas y cachés para crecer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2"><i class="bi bi-universal-access-circle text-primary me-2"></i><strong>Accesibilidad</strong></div>
+                    <p class="small text-secondary mb-0">Interfaces inclusivas siguiendo WCAG.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <h2 class="h1 fw-bold mb-4 text-center">Habilidades</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">Back-end</h3>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-secondary">Node.js</span>
+                  <span class="badge text-bg-secondary">Express</span>
+                  <span class="badge text-bg-secondary">Python</span>
+                  <span class="badge text-bg-secondary">Django</span>
+                  <span class="badge text-bg-secondary">PostgreSQL</span>
+                  <span class="badge text-bg-secondary">MongoDB</span>
+                </div>
+                <div class="mb-2 small">Diseño de APIs</div>
+                <div class="progress mb-3" role="progressbar" aria-label="API" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-primary" style="width: 90%">90%</div>
+                </div>
+                <div class="mb-2 small">Bases de datos</div>
+                <div class="progress" role="progressbar" aria-label="DB" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">Front-end</h3>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-secondary">HTML</span>
+                  <span class="badge text-bg-secondary">CSS</span>
+                  <span class="badge text-bg-secondary">JavaScript</span>
+                  <span class="badge text-bg-secondary">Bootstrap</span>
+                  <span class="badge text-bg-secondary">React</span>
+                </div>
+                <div class="mb-2 small">UI/UX</div>
+                <div class="progress mb-3" role="progressbar" aria-label="UI" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-info" style="width: 80%">80%</div>
+                </div>
+                <div class="mb-2 small">Accesibilidad</div>
+                <div class="progress" role="progressbar" aria-label="A11y" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h1 fw-bold mb-0">Proyectos</h2>
+          <a href="https://github.com/tu-usuario?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-github me-1"></i> Ver más
+          </a>
+        </div>
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+              <img class="card-img-top" src="assets/img/placeholder-16x9.svg" alt="Proyecto API" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">API de E‑commerce</h3>
+                <p class="text-secondary small flex-grow-1">API REST con autenticación JWT, paginación y test unitarios. Desplegado en Docker.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light border">Node.js</span>
+                  <span class="badge text-bg-light border">Express</span>
+                  <span class="badge text-bg-light border">PostgreSQL</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+              <img class="card-img-top" src="assets/img/placeholder-16x9.svg" alt="Dashboard" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Dashboard de Analytics</h3>
+                <p class="text-secondary small flex-grow-1">Dashboard responsive con gráficos dinámicos y filtros avanzados.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light border">React</span>
+                  <span class="badge text-bg-light border">Bootstrap</span>
+                  <span class="badge text-bg-light border">Chart.js</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+              <img class="card-img-top" src="assets/img/placeholder-16x9.svg" alt="Landing" />
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Landing optimizada</h3>
+                <p class="text-secondary small flex-grow-1">Landing SEO‑friendly con Lighthouse 95+ y A11y AA.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light border">HTML</span>
+                  <span class="badge text-bg-light border">CSS</span>
+                  <span class="badge text-bg-light border">JS</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <h2 class="h1 fw-bold mb-4 text-center">Experiencia</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot bg-primary"></div>
+            <div class="timeline-content card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong>Software Engineer — Compañía X</strong>
+                  <span class="badge text-bg-light border">2023 – 2025</span>
+                </div>
+                <p class="small text-secondary mb-0">Lideré la migración a microservicios, reduciendo el tiempo de respuesta en 40%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot bg-primary"></div>
+            <div class="timeline-content card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong>Full‑stack Developer — Startup Y</strong>
+                  <span class="badge text-bg-light border">2021 – 2023</span>
+                </div>
+                <p class="small text-secondary mb-0">Construí un stack end‑to‑end con CI/CD y monitoreo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h2 class="h1 fw-bold mb-3">Contacto</h2>
+            <p class="text-secondary">¿Tienes una idea o proyecto? Me encantará colaborarlo.</p>
+            <div class="vstack gap-2">
+              <a class="link-body-emphasis" href="mailto:tu.email@dominio.com"><i class="bi bi-envelope me-2"></i>tu.email@dominio.com</a>
+              <a class="link-body-emphasis" href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+              <a class="link-body-emphasis" href="https://github.com/tu-usuario" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <form id="contactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required />
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hola, me gustaría…" required></textarea>
+                    </div>
+                    <div class="col-12 d-flex align-items-center gap-3">
+                      <button type="submit" class="btn btn-primary"><i class="bi bi-send me-2"></i>Enviar</button>
+                      <span id="formStatus" class="small text-secondary" role="status" aria-live="polite"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-body-tertiary border-top">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div class="small text-secondary">© <span id="year"></span> Tu Nombre. Todos los derechos reservados.</div>
+        <div class="d-flex gap-3">
+          <a class="small link-secondary" href="#home">Inicio</a>
+          <a class="small link-secondary" href="#projects">Proyectos</a>
+          <a class="small link-secondary" href="#contact">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="toTop" class="btn btn-primary to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
